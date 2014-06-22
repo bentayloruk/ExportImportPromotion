@@ -8,7 +8,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 	[GeneratedCode("System.Xml", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, XmlInclude(typeof(AdvertisementData)), XmlInclude(typeof(DiscountData)), XmlInclude(typeof(DisplayableCampaignItemData)), XmlInclude(typeof(DirectMailData)), XmlType(Namespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService")]
 #else
-	[GeneratedCode("System.Xml", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, XmlInclude(typeof(AdvertisementData)), XmlInclude(typeof(DiscountData)), XmlInclude(typeof(DisplayableCampaignItemData)), XmlInclude(typeof(DirectMailData)), XmlType(Namespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService")]
+	[GeneratedCode("System.Xml", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, XmlInclude(typeof(AdvertisementData)), XmlInclude(typeof(DiscountData)), XmlInclude(typeof(DisplayableCampaignItemData)), XmlInclude(typeof(DirectMailData)), XmlType(Namespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService")]
 #endif
 
 	[Serializable]

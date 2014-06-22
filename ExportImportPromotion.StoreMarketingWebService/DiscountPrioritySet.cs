@@ -511,7 +511,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 			base.Namespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DiscountPrioritySet";
 #else
-			base.Namespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService/DiscountPrioritySet";
+			base.Namespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService/DiscountPrioritySet";
 #endif
 
 			base.Locale = new CultureInfo("en-US");
