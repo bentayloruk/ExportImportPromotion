@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using ExportImportPromotion.StoreMarketingWebService;
 using System;
 using System.Collections;

@@ -366,7 +366,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2004/02/WebServices/GetServiceVersion", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/WebServices", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/WebServices", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/WebServices/GetServiceVersion", RequestNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/WebServices", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/WebServices", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/WebServices/GetServiceVersion", RequestNamespace = "http://schemas.commerceserver.net/2013/01/WebServices", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/WebServices", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public WebServiceVersion GetServiceVersion()
@@ -3860,7 +3860,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2004/02/UploadService/UploadChunk", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/UploadService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/UploadService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/UploadService/UploadChunk", RequestNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/UploadService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/UploadService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/UploadService/UploadChunk", RequestNamespace = "http://schemas.commerceserver.net/2013/01/UploadService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/UploadService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void UploadChunk(Guid token, int ordinal, [XmlElement(DataType = "base64Binary")] byte[] data)

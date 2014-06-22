@@ -87,7 +87,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[XmlElement(Namespace = "http://schemas.microsoft.com/CommerceServer/2004/02/Expressions", IsNullable = true)]
 #else
-		[XmlElement(Namespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/Expressions", IsNullable = true)]
+		[XmlElement(Namespace = "http://schemas.commerceserver.net/2013/01/Expressions", IsNullable = true)]
 #endif
 
 		public XmlElement Body
