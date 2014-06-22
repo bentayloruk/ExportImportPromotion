@@ -12,7 +12,12 @@ using System.Xml;
 using System.Xml.Serialization;
 namespace ExportImportPromotion.StoreMarketingWebService
 {
+#if MS
 	[GeneratedCode("System.Web.Services", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, WebServiceBinding(Name = "MarketingServiceSoap", Namespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService"), XmlInclude(typeof(ExpressionTargetData)), XmlInclude(typeof(DisplayPropertyData)), XmlInclude(typeof(LanguageStringData))]
+#else
+	[GeneratedCode("System.Web.Services", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, WebServiceBinding(Name = "MarketingServiceSoap", Namespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService"), XmlInclude(typeof(ExpressionTargetData)), XmlInclude(typeof(DisplayPropertyData)), XmlInclude(typeof(LanguageStringData))]
+#endif
+
 	public class MarketingService : SoapHttpClientProtocol
 	{
 		private SendOrPostCallback GetAuthorizedTasksOperationCompleted;
@@ -265,7 +270,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.useDefaultCredentialsSetExplicitly = true;
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAuthorizedTasks", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAuthorizedTasks", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public DataSet GetAuthorizedTasks()
 		{
 			object[] array = base.Invoke("GetAuthorizedTasks", new object[0]);
@@ -291,7 +301,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAuthorizedTasksCompleted(this, new GetAuthorizedTasksCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllLanguagesInUse", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllLanguagesInUse", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public string[] GetAllLanguagesInUse()
 		{
 			object[] array = base.Invoke("GetAllLanguagesInUse", new object[0]);
@@ -317,7 +332,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllLanguagesInUseCompleted(this, new GetAllLanguagesInUseCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDefaultLanguage", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDefaultLanguage", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public string GetDefaultLanguage()
 		{
 			object[] array = base.Invoke("GetDefaultLanguage", new object[0]);
@@ -343,7 +363,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetDefaultLanguageCompleted(this, new GetDefaultLanguageCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2004/02/WebServices/GetServiceVersion", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/WebServices", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/WebServices", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2004/02/WebServices/GetServiceVersion", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/WebServices", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/WebServices", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public WebServiceVersion GetServiceVersion()
 		{
 			object[] array = base.Invoke("GetServiceVersion", new object[0]);
@@ -369,7 +394,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetServiceVersionCompleted(this, new GetServiceVersionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AccessCheckCancelCouponExport", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AccessCheckCancelCouponExport", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void AccessCheckCancelCouponExport(string filePath)
 		{
 			base.Invoke("AccessCheckCancelCouponExport", new object[]
@@ -400,7 +430,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.AccessCheckCancelCouponExportCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetSearchableProperties", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetSearchableProperties", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public DataSet GetSearchableProperties()
 		{
 			object[] array = base.Invoke("GetSearchableProperties", new object[0]);
@@ -426,7 +461,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetSearchablePropertiesCompleted(this, new GetSearchablePropertiesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ExecuteSearch", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ExecuteSearch", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public DataSet ExecuteSearch(string entityType, XmlElement searchClause, SearchOptions searchOptions, bool includePerformanceData)
 		{
 			object[] array = base.Invoke("ExecuteSearch", new object[]
@@ -464,7 +504,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.ExecuteSearchCompleted(this, new ExecuteSearchCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ExecuteSearchWithCount", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ExecuteSearchWithCount", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public DataSet ExecuteSearchWithCount(string entityType, XmlElement searchClause, SearchOptions searchOptions, bool includePerformanceData, out int recordsMatched)
 		{
 			object[] array = base.Invoke("ExecuteSearchWithCount", new object[]
@@ -503,7 +548,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.ExecuteSearchWithCountCompleted(this, new ExecuteSearchWithCountCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("Customer", IsNullable = true)]
 		public CustomerData GetCustomer(int customerId)
 		{
@@ -536,7 +586,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetCustomerCompleted(this, new GetCustomerCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("Customer", IsNullable = true)]
 		public CustomerData NewCustomer()
 		{
@@ -563,7 +618,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.NewCustomerCompleted(this, new NewCustomerCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveCustomer([XmlElement(IsNullable = true)] ref CustomerData Customer, bool forceOverwrite)
 		{
 			object[] array = base.Invoke("SaveCustomer", new object[]
@@ -597,7 +657,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveCustomerCompleted(this, new SaveCustomerCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteCustomer(int customerId)
 		{
 			base.Invoke("DeleteCustomer", new object[]
@@ -628,7 +693,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteCustomerCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void RestoreCustomer(int customerId, string newCustomerName)
 		{
 			base.Invoke("RestoreCustomer", new object[]
@@ -661,7 +731,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.RestoreCustomerCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("Campaign", IsNullable = true)]
 		public CampaignData GetCampaign(int campaignId)
 		{
@@ -694,7 +769,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetCampaignCompleted(this, new GetCampaignCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("Campaign", IsNullable = true)]
 		public CampaignData NewCampaign(int parentCustomerId)
 		{
@@ -727,7 +807,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.NewCampaignCompleted(this, new NewCampaignCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveCampaign([XmlElement(IsNullable = true)] ref CampaignData Campaign, bool forceOverwrite)
 		{
 			object[] array = base.Invoke("SaveCampaign", new object[]
@@ -761,7 +846,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveCampaignCompleted(this, new SaveCampaignCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ActivateCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ActivateCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void ActivateCampaign(int campaignId, bool active, DateTime timestamp)
 		{
 			base.Invoke("ActivateCampaign", new object[]
@@ -796,7 +886,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.ActivateCampaignCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteCampaign(int campaignId)
 		{
 			base.Invoke("DeleteCampaign", new object[]
@@ -827,7 +922,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteCampaignCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void RestoreCampaign(int campaignId, int newParentCustomerId, string newCampaignName)
 		{
 			base.Invoke("RestoreCampaign", new object[]
@@ -862,7 +962,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.RestoreCampaignCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/MoveCampaignToCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/MoveCampaignToCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void MoveCampaignToCustomer(int campaignId, int newParentCustomerId)
 		{
 			base.Invoke("MoveCampaignToCustomer", new object[]
@@ -895,7 +1000,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.MoveCampaignToCustomerCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("CampaignItem", IsNullable = true)]
 		public CampaignItemData NewCampaignItem(CampaignItemType campaignItemType, int parentCampaignId)
 		{
@@ -930,7 +1040,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.NewCampaignItemCompleted(this, new NewCampaignItemCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("CampaignItem", IsNullable = true)]
 		public CampaignItemData GetCampaignItem(int campaignItemId)
 		{
@@ -963,7 +1078,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetCampaignItemCompleted(this, new GetCampaignItemCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/TestDirectMail", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/TestDirectMail", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void TestDirectMail(int campaignItemId)
 		{
 			base.Invoke("TestDirectMail", new object[]
@@ -994,7 +1114,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.TestDirectMailCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveCampaignItem([XmlElement(IsNullable = true)] ref CampaignItemData CampaignItem, bool forceOverwrite)
 		{
 			object[] array = base.Invoke("SaveCampaignItem", new object[]
@@ -1028,7 +1153,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveCampaignItemCompleted(this, new SaveCampaignItemCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CopyCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CopyCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("CampaignItem", IsNullable = true)]
 		public CampaignItemData CopyCampaignItem(int campaignItemId, int newParentCampaignId)
 		{
@@ -1063,7 +1193,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.CopyCampaignItemCompleted(this, new CopyCampaignItemCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteCampaignItem(int campaignItemId)
 		{
 			base.Invoke("DeleteCampaignItem", new object[]
@@ -1094,7 +1229,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteCampaignItemCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void RestoreCampaignItem(int campaignItemId, int newParentCampaignId, string newCampaignItemName)
 		{
 			base.Invoke("RestoreCampaignItem", new object[]
@@ -1129,7 +1269,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.RestoreCampaignItemCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/MoveCampaignItemToCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/MoveCampaignItemToCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void MoveCampaignItemToCampaign(int campaignItemId, int newParentCampaignId)
 		{
 			base.Invoke("MoveCampaignItemToCampaign", new object[]
@@ -1162,7 +1307,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.MoveCampaignItemToCampaignCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ActivateCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ActivateCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void ActivateCampaignItem(int campaignItemId, bool active, DateTime timestamp)
 		{
 			base.Invoke("ActivateCampaignItem", new object[]
@@ -1197,7 +1347,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.ActivateCampaignItemCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GenerateCampaignItemPreview", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GenerateCampaignItemPreview", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public string GenerateCampaignItemPreview(string templateName, DisplayPropertyValueData[] propertyValues)
 		{
 			object[] array = base.Invoke("GenerateCampaignItemPreview", new object[]
@@ -1231,7 +1386,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GenerateCampaignItemPreviewCompleted(this, new GenerateCampaignItemPreviewCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("Expression", IsNullable = true)]
 		public ExpressionData NewExpression()
 		{
@@ -1258,7 +1418,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.NewExpressionCompleted(this, new NewExpressionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("Expression", IsNullable = true)]
 		public ExpressionData GetExpression(int expressionId)
 		{
@@ -1291,7 +1456,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetExpressionCompleted(this, new GetExpressionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveExpression([XmlElement(IsNullable = true)] ref ExpressionData Expression, bool forceOverwrite)
 		{
 			object[] array = base.Invoke("SaveExpression", new object[]
@@ -1325,7 +1495,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveExpressionCompleted(this, new SaveExpressionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CopyExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CopyExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("Expression", IsNullable = true)]
 		public ExpressionData CopyExpression(int expressionId)
 		{
@@ -1358,7 +1533,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.CopyExpressionCompleted(this, new CopyExpressionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteExpression(int expressionId)
 		{
 			base.Invoke("DeleteExpression", new object[]
@@ -1389,7 +1569,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteExpressionCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllExpressionCategories", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllExpressionCategories", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public ExpressionCategorySet GetAllExpressionCategories()
 		{
 			object[] array = base.Invoke("GetAllExpressionCategories", new object[0]);
@@ -1415,7 +1600,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllExpressionCategoriesCompleted(this, new GetAllExpressionCategoriesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveExpressionCategories", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveExpressionCategories", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveExpressionCategories(ExpressionCategorySet expressionCategorySet)
 		{
 			base.Invoke("SaveExpressionCategories", new object[]
@@ -1446,8 +1636,18 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveExpressionCategoriesCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetProfileDefinitions", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetProfileDefinitions", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
+#if MS
 		[return: XmlElement(Namespace = "http://schemas.microsoft.com/CommerceServer/2006/06/ProfileDefinitions")]
+#else
+		[return: XmlElement(Namespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/ProfileDefinitions")]
+#endif
+
 		public XmlElement GetProfileDefinitions(string[] profileNames)
 		{
 			object[] array = base.Invoke("GetProfileDefinitions", new object[]
@@ -1479,8 +1679,18 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetProfileDefinitionsCompleted(this, new GetProfileDefinitionsCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetSiteTerms", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetSiteTerms", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
+#if MS
 		[return: XmlElement(Namespace = "http://schemas.microsoft.com/CommerceServer/2006/06/SiteTerms")]
+#else
+		[return: XmlElement(Namespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/SiteTerms")]
+#endif
+
 		public XmlElement GetSiteTerms()
 		{
 			object[] array = base.Invoke("GetSiteTerms", new object[0]);
@@ -1506,7 +1716,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetSiteTermsCompleted(this, new GetSiteTermsCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/UpdateDiscountPriorities", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/UpdateDiscountPriorities", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void UpdateDiscountPriorities(DiscountPrioritySet discountPrioritySet)
 		{
 			base.Invoke("UpdateDiscountPriorities", new object[]
@@ -1537,7 +1752,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.UpdateDiscountPrioritiesCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/PrioritizeDiscount", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/PrioritizeDiscount", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void PrioritizeDiscount(int campaignItemId, int newPriority, PrioritizeOption prioritizeOption)
 		{
 			base.Invoke("PrioritizeDiscount", new object[]
@@ -1572,7 +1792,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.PrioritizeDiscountCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("DisplaySize", IsNullable = true)]
 		public DisplaySizeData GetDisplaySize(int displaySizeId)
 		{
@@ -1605,7 +1830,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetDisplaySizeCompleted(this, new GetDisplaySizeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplaySizeByName", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplaySizeByName", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("DisplaySize", IsNullable = true)]
 		public DisplaySizeData GetDisplaySizeByName(string displaySizeName)
 		{
@@ -1638,7 +1868,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetDisplaySizeByNameCompleted(this, new GetDisplaySizeByNameCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllDisplaySizes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllDisplaySizes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public DisplaySizeData[] GetAllDisplaySizes()
 		{
 			object[] array = base.Invoke("GetAllDisplaySizes", new object[0]);
@@ -1664,7 +1899,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllDisplaySizesCompleted(this, new GetAllDisplaySizesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveDisplaySize([XmlElement(IsNullable = true)] ref DisplaySizeData DisplaySize)
 		{
 			object[] array = base.Invoke("SaveDisplaySize", new object[]
@@ -1696,7 +1936,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveDisplaySizeCompleted(this, new SaveDisplaySizeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteDisplaySize(int displaySizeId)
 		{
 			base.Invoke("DeleteDisplaySize", new object[]
@@ -1727,7 +1972,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteDisplaySizeCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("PageGroup", IsNullable = true)]
 		public PageGroupData GetPageGroup(int pageGroupId)
 		{
@@ -1760,7 +2010,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetPageGroupCompleted(this, new GetPageGroupCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllPageGroups", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllPageGroups", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public PageGroupData[] GetAllPageGroups()
 		{
 			object[] array = base.Invoke("GetAllPageGroups", new object[0]);
@@ -1786,7 +2041,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllPageGroupsCompleted(this, new GetAllPageGroupsCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SavePageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SavePageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SavePageGroup([XmlElement(IsNullable = true)] ref PageGroupData PageGroup)
 		{
 			object[] array = base.Invoke("SavePageGroup", new object[]
@@ -1818,7 +2078,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SavePageGroupCompleted(this, new SavePageGroupCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeletePageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeletePageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeletePageGroup(int pageGroupId)
 		{
 			base.Invoke("DeletePageGroup", new object[]
@@ -1849,7 +2114,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeletePageGroupCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("DisplayTemplate", IsNullable = true)]
 		public DisplayTemplateData GetDisplayTemplate(int displayTemplateId)
 		{
@@ -1882,7 +2152,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetDisplayTemplateCompleted(this, new GetDisplayTemplateCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplayTemplateByName", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplayTemplateByName", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("DisplayTemplate", IsNullable = true)]
 		public DisplayTemplateData GetDisplayTemplateByName(string displayTemplateName)
 		{
@@ -1915,7 +2190,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetDisplayTemplateByNameCompleted(this, new GetDisplayTemplateByNameCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllDisplayTemplates", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllDisplayTemplates", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public DisplayTemplateData[] GetAllDisplayTemplates()
 		{
 			object[] array = base.Invoke("GetAllDisplayTemplates", new object[0]);
@@ -1941,7 +2221,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllDisplayTemplatesCompleted(this, new GetAllDisplayTemplatesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveDisplayTemplate([XmlElement(IsNullable = true)] ref DisplayTemplateData DisplayTemplate)
 		{
 			object[] array = base.Invoke("SaveDisplayTemplate", new object[]
@@ -1973,7 +2258,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveDisplayTemplateCompleted(this, new SaveDisplayTemplateCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteDisplayTemplate(int displayTemplateId)
 		{
 			base.Invoke("DeleteDisplayTemplate", new object[]
@@ -2004,7 +2294,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteDisplayTemplateCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllIndustryCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllIndustryCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public IndustryCodeData[] GetAllIndustryCodes()
 		{
 			object[] array = base.Invoke("GetAllIndustryCodes", new object[0]);
@@ -2030,7 +2325,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllIndustryCodesCompleted(this, new GetAllIndustryCodesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("IndustryCode", IsNullable = true)]
 		public IndustryCodeData GetIndustryCode(int industryCodeId)
 		{
@@ -2063,7 +2363,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetIndustryCodeCompleted(this, new GetIndustryCodeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveIndustryCode([XmlElement(IsNullable = true)] ref IndustryCodeData IndustryCode)
 		{
 			object[] array = base.Invoke("SaveIndustryCode", new object[]
@@ -2095,7 +2400,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveIndustryCodeCompleted(this, new SaveIndustryCodeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteIndustryCode(int industryCodeId)
 		{
 			base.Invoke("DeleteIndustryCode", new object[]
@@ -2126,7 +2436,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteIndustryCodeCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("CampaignEventType", IsNullable = true)]
 		public CampaignEventTypeData GetCampaignEventType(int campaignEventTypeId)
 		{
@@ -2159,7 +2474,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetCampaignEventTypeCompleted(this, new GetCampaignEventTypeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllCampaignEventTypes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllCampaignEventTypes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public CampaignEventTypeData[] GetAllCampaignEventTypes()
 		{
 			object[] array = base.Invoke("GetAllCampaignEventTypes", new object[0]);
@@ -2185,7 +2505,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllCampaignEventTypesCompleted(this, new GetAllCampaignEventTypesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveCampaignEventType([XmlElement(IsNullable = true)] ref CampaignEventTypeData CampaignEventType)
 		{
 			object[] array = base.Invoke("SaveCampaignEventType", new object[]
@@ -2217,7 +2542,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveCampaignEventTypeCompleted(this, new SaveCampaignEventTypeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteCampaignEventType(int campaignEventTypeId)
 		{
 			base.Invoke("DeleteCampaignEventType", new object[]
@@ -2248,7 +2578,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteCampaignEventTypeCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RefreshCache", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RefreshCache", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void RefreshCache(string cacheName)
 		{
 			base.Invoke("RefreshCache", new object[]
@@ -2279,7 +2614,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.RefreshCacheCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("List", IsNullable = true)]
 		public MailingListData GetMailingList(Guid listId)
 		{
@@ -2312,7 +2652,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetMailingListCompleted(this, new GetMailingListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllMailingLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllMailingLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public MailingListData[] GetAllMailingLists()
 		{
 			object[] array = base.Invoke("GetAllMailingLists", new object[0]);
@@ -2338,7 +2683,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllMailingListsCompleted(this, new GetAllMailingListsCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SaveMailingList([XmlElement(IsNullable = true)] ref MailingListData List)
 		{
 			object[] array = base.Invoke("SaveMailingList", new object[]
@@ -2370,7 +2720,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SaveMailingListCompleted(this, new SaveMailingListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetUserFromList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetUserFromList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("ListUser", IsNullable = true)]
 		public MailingListUserData GetUserFromList(Guid listId, string email)
 		{
@@ -2405,7 +2760,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetUserFromListCompleted(this, new GetUserFromListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AddUserToList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AddUserToList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public int AddUserToList(Guid listId, [XmlElement(IsNullable = true)] MailingListUserData ListUser)
 		{
 			object[] array = base.Invoke("AddUserToList", new object[]
@@ -2439,7 +2799,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.AddUserToListCompleted(this, new AddUserToListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/UpdateUserInList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/UpdateUserInList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void UpdateUserInList(Guid listId, [XmlElement(IsNullable = true)] MailingListUserData ListUser)
 		{
 			base.Invoke("UpdateUserInList", new object[]
@@ -2472,7 +2837,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.UpdateUserInListCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RemoveUserFromList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RemoveUserFromList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public int RemoveUserFromList(Guid listId, string email)
 		{
 			object[] array = base.Invoke("RemoveUserFromList", new object[]
@@ -2506,7 +2876,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.RemoveUserFromListCompleted(this, new RemoveUserFromListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteList(Guid listId)
 		{
 			base.Invoke("DeleteList", new object[]
@@ -2537,7 +2912,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteListCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SubtractLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SubtractLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public Guid SubtractLists(Guid outputListId, Guid inputListId)
 		{
 			object[] array = base.Invoke("SubtractLists", new object[]
@@ -2571,7 +2951,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SubtractListsCompleted(this, new SubtractListsCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AppendLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AppendLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public Guid AppendLists(Guid outputListId, Guid inputListId)
 		{
 			object[] array = base.Invoke("AppendLists", new object[]
@@ -2605,7 +2990,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.AppendListsCompleted(this, new AppendListsCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AppendExpressionToList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AppendExpressionToList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public Guid AppendExpressionToList(Guid outputListId, int expressionId)
 		{
 			object[] array = base.Invoke("AppendExpressionToList", new object[]
@@ -2639,7 +3029,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.AppendExpressionToListCompleted(this, new AppendExpressionToListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/InitImportMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/InitImportMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public UploadHandshake InitImportMailingList(Guid listId, string filePath, long fileSize, DateTime fileLastWriteTime)
 		{
 			object[] array = base.Invoke("InitImportMailingList", new object[]
@@ -2677,7 +3072,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.InitImportMailingListCompleted(this, new InitImportMailingListCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ImportMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ImportMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void ImportMailingList(Guid operationId)
 		{
 			base.Invoke("ImportMailingList", new object[]
@@ -2708,7 +3108,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.ImportMailingListCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AbortListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AbortListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void AbortListOperation(Guid operationId)
 		{
 			base.Invoke("AbortListOperation", new object[]
@@ -2739,7 +3144,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.AbortListOperationCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public MailingListOperationData GetListOperation(Guid operationId)
 		{
 			object[] array = base.Invoke("GetListOperation", new object[]
@@ -2771,7 +3181,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetListOperationCompleted(this, new GetListOperationCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetListOperationHistory", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetListOperationHistory", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public MailingListOperationData[] GetListOperationHistory(Guid listId)
 		{
 			object[] array = base.Invoke("GetListOperationHistory", new object[]
@@ -2803,7 +3218,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetListOperationHistoryCompleted(this, new GetListOperationHistoryCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMostRecentListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMostRecentListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public MailingListOperationData GetMostRecentListOperation(Guid listId)
 		{
 			object[] array = base.Invoke("GetMostRecentListOperation", new object[]
@@ -2835,7 +3255,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetMostRecentListOperationCompleted(this, new GetMostRecentListOperationCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CreateListCopy", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CreateListCopy", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("List", IsNullable = true)]
 		public MailingListData CreateListCopy(string name, Guid sourceListId)
 		{
@@ -2870,7 +3295,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.CreateListCopyCompleted(this, new CreateListCopyCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllowedProfileDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllowedProfileDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public string GetAllowedProfileDefinition()
 		{
 			object[] array = base.Invoke("GetAllowedProfileDefinition", new object[0]);
@@ -2896,7 +3326,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetAllowedProfileDefinitionCompleted(this, new GetAllowedProfileDefinitionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewPromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewPromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("PromoCodeDefinition", IsNullable = true)]
 		public PromoCodeDefinitionData NewPromoCodeDefinition()
 		{
@@ -2923,7 +3358,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.NewPromoCodeDefinitionCompleted(this, new NewPromoCodeDefinitionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SavePromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SavePromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void SavePromoCodeDefinition([XmlElement(IsNullable = true)] ref PromoCodeDefinitionData PromoCodeDefinition, bool forceOverwrite)
 		{
 			object[] array = base.Invoke("SavePromoCodeDefinition", new object[]
@@ -2957,7 +3397,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.SavePromoCodeDefinitionCompleted(this, new SavePromoCodeDefinitionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeletePromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeletePromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeletePromoCodeDefinition(int promoCodeDefinitionId)
 		{
 			base.Invoke("DeletePromoCodeDefinition", new object[]
@@ -2988,7 +3433,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeletePromoCodeDefinitionCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteBatch", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteBatch", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void DeleteBatch(Guid batchId)
 		{
 			base.Invoke("DeleteBatch", new object[]
@@ -3019,7 +3469,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.DeleteBatchCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GenerateRandomPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GenerateRandomPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public Guid GenerateRandomPromoCodes(int promoCodeDefinitionId, string batchName, int numberOfCodes, RandomGenerationParameters generationParameters)
 		{
 			object[] array = base.Invoke("GenerateRandomPromoCodes", new object[]
@@ -3057,7 +3512,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GenerateRandomPromoCodesCompleted(this, new GenerateRandomPromoCodesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/LookupPromoCodeDefinitionByCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/LookupPromoCodeDefinitionByCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("PromoCodeDefinition", IsNullable = true)]
 		public PromoCodeDefinitionData LookupPromoCodeDefinitionByCode(string promoCode)
 		{
@@ -3090,7 +3550,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.LookupPromoCodeDefinitionByCodeCompleted(this, new LookupPromoCodeDefinitionByCodeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		[return: XmlElement("PromoCodeDefinition", IsNullable = true)]
 		public PromoCodeDefinitionData GetPromoCodeDefinition(int promoCodeDefinitionId)
 		{
@@ -3123,7 +3588,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetPromoCodeDefinitionCompleted(this, new GetPromoCodeDefinitionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetBatchInfosForDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetBatchInfosForDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public BatchInfo[] GetBatchInfosForDefinition(int promoCodeDefinitionId, bool onlyCompletedBatches)
 		{
 			object[] array = base.Invoke("GetBatchInfosForDefinition", new object[]
@@ -3157,7 +3627,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetBatchInfosForDefinitionCompleted(this, new GetBatchInfosForDefinitionCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/InitImportPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/InitImportPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public UploadHandshake InitImportPromoCodes(int promoCodeDefinitionId, string batchName, string filePath, long fileSize, DateTime fileLastWriteTime, int codeLength, string prefix, string suffix)
 		{
 			object[] array = base.Invoke("InitImportPromoCodes", new object[]
@@ -3203,7 +3678,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.InitImportPromoCodesCompleted(this, new InitImportPromoCodesCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ImportPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ImportPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void ImportPromoCodes(Guid importToken)
 		{
 			base.Invoke("ImportPromoCodes", new object[]
@@ -3234,7 +3714,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.ImportPromoCodesCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPromoCodeGenerationStatus", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPromoCodeGenerationStatus", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public PromoCodeOperationStatus GetPromoCodeGenerationStatus(int promoCodeDefinitionId)
 		{
 			object[] array = base.Invoke("GetPromoCodeGenerationStatus", new object[]
@@ -3266,7 +3751,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetPromoCodeGenerationStatusCompleted(this, new GetPromoCodeGenerationStatusCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CancelPromoCodeGeneration", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CancelPromoCodeGeneration", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public Guid CancelPromoCodeGeneration(int promoCodeDefinitionId)
 		{
 			object[] array = base.Invoke("CancelPromoCodeGeneration", new object[]
@@ -3298,7 +3788,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.CancelPromoCodeGenerationCompleted(this, new CancelPromoCodeGenerationCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RevertPromoCodeRedemption", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RevertPromoCodeRedemption", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void RevertPromoCodeRedemption(string promoCode, Guid basketOrderGroupId)
 		{
 			base.Invoke("RevertPromoCodeRedemption", new object[]
@@ -3331,7 +3826,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.RevertPromoCodeRedemptionCompleted(this, new AsyncCompletedEventArgs(invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMaximumPromoCodeBatchSize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMaximumPromoCodeBatchSize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public int GetMaximumPromoCodeBatchSize()
 		{
 			object[] array = base.Invoke("GetMaximumPromoCodeBatchSize", new object[0]);
@@ -3357,7 +3857,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 				this.GetMaximumPromoCodeBatchSizeCompleted(this, new GetMaximumPromoCodeBatchSizeCompletedEventArgs(invokeCompletedEventArgs.Results, invokeCompletedEventArgs.Error, invokeCompletedEventArgs.Cancelled, invokeCompletedEventArgs.UserState));
 			}
 		}
+#if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2004/02/UploadService/UploadChunk", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/UploadService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/UploadService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#else
+		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2004/02/UploadService/UploadChunk", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2004/02/UploadService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2004/02/UploadService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+#endif
+
 		public void UploadChunk(Guid token, int ordinal, [XmlElement(DataType = "base64Binary")] byte[] data)
 		{
 			base.Invoke("UploadChunk", new object[]

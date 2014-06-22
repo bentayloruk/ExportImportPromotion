@@ -508,7 +508,12 @@ namespace ExportImportPromotion.StoreMarketingWebService
 		{
 			base.DataSetName = "DiscountPrioritySet";
 			base.Prefix = "";
+#if MS
 			base.Namespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DiscountPrioritySet";
+#else
+			base.Namespace = "http://schemas.commerceserver.net/2013/01/CommerceServer/2006/06/MarketingWebService/DiscountPrioritySet";
+#endif
+
 			base.Locale = new CultureInfo("en-US");
 			base.EnforceConstraints = true;
 			this.SchemaSerializationMode = SchemaSerializationMode.IncludeSchema;
