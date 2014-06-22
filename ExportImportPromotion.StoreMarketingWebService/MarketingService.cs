@@ -15,7 +15,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 	[GeneratedCode("System.Web.Services", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, WebServiceBinding(Name = "MarketingServiceSoap", Namespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService"), XmlInclude(typeof(ExpressionTargetData)), XmlInclude(typeof(DisplayPropertyData)), XmlInclude(typeof(LanguageStringData))]
 #else
-	[GeneratedCode("System.Web.Services", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, WebServiceBinding(Name = "MarketingServiceSoap", Namespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService"), XmlInclude(typeof(ExpressionTargetData)), XmlInclude(typeof(DisplayPropertyData)), XmlInclude(typeof(LanguageStringData))]
+	[GeneratedCode("System.Web.Services", "4.0.30319.1"), DesignerCategory("code"), DebuggerStepThrough, WebServiceBinding(Name = "MarketingServiceSoap", Namespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService"), XmlInclude(typeof(ExpressionTargetData)), XmlInclude(typeof(DisplayPropertyData)), XmlInclude(typeof(LanguageStringData))]
 #endif
 
 	public class MarketingService : SoapHttpClientProtocol
@@ -273,7 +273,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAuthorizedTasks", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAuthorizedTasks", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAuthorizedTasks", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public DataSet GetAuthorizedTasks()
@@ -304,7 +304,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllLanguagesInUse", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllLanguagesInUse", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllLanguagesInUse", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public string[] GetAllLanguagesInUse()
@@ -335,7 +335,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDefaultLanguage", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetDefaultLanguage", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetDefaultLanguage", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public string GetDefaultLanguage()
@@ -397,7 +397,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AccessCheckCancelCouponExport", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/AccessCheckCancelCouponExport", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/AccessCheckCancelCouponExport", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void AccessCheckCancelCouponExport(string filePath)
@@ -433,7 +433,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetSearchableProperties", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetSearchableProperties", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetSearchableProperties", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public DataSet GetSearchableProperties()
@@ -464,7 +464,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ExecuteSearch", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/ExecuteSearch", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/ExecuteSearch", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public DataSet ExecuteSearch(string entityType, XmlElement searchClause, SearchOptions searchOptions, bool includePerformanceData)
@@ -507,7 +507,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ExecuteSearchWithCount", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/ExecuteSearchWithCount", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/ExecuteSearchWithCount", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public DataSet ExecuteSearchWithCount(string entityType, XmlElement searchClause, SearchOptions searchOptions, bool includePerformanceData, out int recordsMatched)
@@ -551,7 +551,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("Customer", IsNullable = true)]
@@ -589,7 +589,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/NewCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/NewCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("Customer", IsNullable = true)]
@@ -621,7 +621,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveCustomer([XmlElement(IsNullable = true)] ref CustomerData Customer, bool forceOverwrite)
@@ -660,7 +660,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteCustomer(int customerId)
@@ -696,7 +696,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/RestoreCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/RestoreCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void RestoreCustomer(int customerId, string newCustomerName)
@@ -734,7 +734,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("Campaign", IsNullable = true)]
@@ -772,7 +772,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/NewCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/NewCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("Campaign", IsNullable = true)]
@@ -810,7 +810,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveCampaign([XmlElement(IsNullable = true)] ref CampaignData Campaign, bool forceOverwrite)
@@ -849,7 +849,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ActivateCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/ActivateCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/ActivateCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void ActivateCampaign(int campaignId, bool active, DateTime timestamp)
@@ -889,7 +889,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteCampaign(int campaignId)
@@ -925,7 +925,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/RestoreCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/RestoreCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void RestoreCampaign(int campaignId, int newParentCustomerId, string newCampaignName)
@@ -965,7 +965,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/MoveCampaignToCustomer", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/MoveCampaignToCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/MoveCampaignToCustomer", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void MoveCampaignToCustomer(int campaignId, int newParentCustomerId)
@@ -1003,7 +1003,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/NewCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/NewCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("CampaignItem", IsNullable = true)]
@@ -1043,7 +1043,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("CampaignItem", IsNullable = true)]
@@ -1081,7 +1081,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/TestDirectMail", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/TestDirectMail", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/TestDirectMail", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void TestDirectMail(int campaignItemId)
@@ -1117,7 +1117,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveCampaignItem([XmlElement(IsNullable = true)] ref CampaignItemData CampaignItem, bool forceOverwrite)
@@ -1156,7 +1156,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CopyCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/CopyCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/CopyCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("CampaignItem", IsNullable = true)]
@@ -1196,7 +1196,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteCampaignItem(int campaignItemId)
@@ -1232,7 +1232,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RestoreCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/RestoreCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/RestoreCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void RestoreCampaignItem(int campaignItemId, int newParentCampaignId, string newCampaignItemName)
@@ -1272,7 +1272,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/MoveCampaignItemToCampaign", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/MoveCampaignItemToCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/MoveCampaignItemToCampaign", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void MoveCampaignItemToCampaign(int campaignItemId, int newParentCampaignId)
@@ -1310,7 +1310,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ActivateCampaignItem", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/ActivateCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/ActivateCampaignItem", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void ActivateCampaignItem(int campaignItemId, bool active, DateTime timestamp)
@@ -1350,7 +1350,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GenerateCampaignItemPreview", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GenerateCampaignItemPreview", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GenerateCampaignItemPreview", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public string GenerateCampaignItemPreview(string templateName, DisplayPropertyValueData[] propertyValues)
@@ -1389,7 +1389,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/NewExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/NewExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("Expression", IsNullable = true)]
@@ -1421,7 +1421,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("Expression", IsNullable = true)]
@@ -1459,7 +1459,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveExpression([XmlElement(IsNullable = true)] ref ExpressionData Expression, bool forceOverwrite)
@@ -1498,7 +1498,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CopyExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/CopyExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/CopyExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("Expression", IsNullable = true)]
@@ -1536,7 +1536,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteExpression", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteExpression", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteExpression(int expressionId)
@@ -1572,7 +1572,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllExpressionCategories", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllExpressionCategories", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllExpressionCategories", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public ExpressionCategorySet GetAllExpressionCategories()
@@ -1603,7 +1603,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveExpressionCategories", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveExpressionCategories", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveExpressionCategories", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveExpressionCategories(ExpressionCategorySet expressionCategorySet)
@@ -1639,7 +1639,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetProfileDefinitions", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetProfileDefinitions", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetProfileDefinitions", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 #if MS
@@ -1682,7 +1682,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetSiteTerms", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetSiteTerms", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetSiteTerms", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 #if MS
@@ -1719,7 +1719,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/UpdateDiscountPriorities", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/UpdateDiscountPriorities", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/UpdateDiscountPriorities", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void UpdateDiscountPriorities(DiscountPrioritySet discountPrioritySet)
@@ -1755,7 +1755,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/PrioritizeDiscount", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/PrioritizeDiscount", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/PrioritizeDiscount", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void PrioritizeDiscount(int campaignItemId, int newPriority, PrioritizeOption prioritizeOption)
@@ -1795,7 +1795,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetDisplaySize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetDisplaySize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("DisplaySize", IsNullable = true)]
@@ -1833,7 +1833,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplaySizeByName", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetDisplaySizeByName", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetDisplaySizeByName", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("DisplaySize", IsNullable = true)]
@@ -1871,7 +1871,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllDisplaySizes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllDisplaySizes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllDisplaySizes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public DisplaySizeData[] GetAllDisplaySizes()
@@ -1902,7 +1902,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveDisplaySize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveDisplaySize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveDisplaySize([XmlElement(IsNullable = true)] ref DisplaySizeData DisplaySize)
@@ -1939,7 +1939,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteDisplaySize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteDisplaySize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteDisplaySize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteDisplaySize(int displaySizeId)
@@ -1975,7 +1975,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetPageGroup", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetPageGroup", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("PageGroup", IsNullable = true)]
@@ -2013,7 +2013,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllPageGroups", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllPageGroups", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllPageGroups", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public PageGroupData[] GetAllPageGroups()
@@ -2044,7 +2044,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SavePageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SavePageGroup", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SavePageGroup", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SavePageGroup([XmlElement(IsNullable = true)] ref PageGroupData PageGroup)
@@ -2081,7 +2081,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeletePageGroup", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeletePageGroup", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeletePageGroup", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeletePageGroup(int pageGroupId)
@@ -2117,7 +2117,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetDisplayTemplate", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetDisplayTemplate", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("DisplayTemplate", IsNullable = true)]
@@ -2155,7 +2155,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetDisplayTemplateByName", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetDisplayTemplateByName", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetDisplayTemplateByName", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("DisplayTemplate", IsNullable = true)]
@@ -2193,7 +2193,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllDisplayTemplates", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllDisplayTemplates", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllDisplayTemplates", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public DisplayTemplateData[] GetAllDisplayTemplates()
@@ -2224,7 +2224,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveDisplayTemplate", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveDisplayTemplate", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveDisplayTemplate([XmlElement(IsNullable = true)] ref DisplayTemplateData DisplayTemplate)
@@ -2261,7 +2261,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteDisplayTemplate", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteDisplayTemplate", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteDisplayTemplate", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteDisplayTemplate(int displayTemplateId)
@@ -2297,7 +2297,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllIndustryCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllIndustryCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllIndustryCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public IndustryCodeData[] GetAllIndustryCodes()
@@ -2328,7 +2328,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetIndustryCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetIndustryCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("IndustryCode", IsNullable = true)]
@@ -2366,7 +2366,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveIndustryCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveIndustryCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveIndustryCode([XmlElement(IsNullable = true)] ref IndustryCodeData IndustryCode)
@@ -2403,7 +2403,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteIndustryCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteIndustryCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteIndustryCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteIndustryCode(int industryCodeId)
@@ -2439,7 +2439,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetCampaignEventType", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetCampaignEventType", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("CampaignEventType", IsNullable = true)]
@@ -2477,7 +2477,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllCampaignEventTypes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllCampaignEventTypes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllCampaignEventTypes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public CampaignEventTypeData[] GetAllCampaignEventTypes()
@@ -2508,7 +2508,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveCampaignEventType", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveCampaignEventType", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveCampaignEventType([XmlElement(IsNullable = true)] ref CampaignEventTypeData CampaignEventType)
@@ -2545,7 +2545,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteCampaignEventType", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteCampaignEventType", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteCampaignEventType", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteCampaignEventType(int campaignEventTypeId)
@@ -2581,7 +2581,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RefreshCache", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/RefreshCache", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/RefreshCache", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void RefreshCache(string cacheName)
@@ -2617,7 +2617,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("List", IsNullable = true)]
@@ -2655,7 +2655,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllMailingLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllMailingLists", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllMailingLists", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public MailingListData[] GetAllMailingLists()
@@ -2686,7 +2686,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SaveMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SaveMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SaveMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SaveMailingList([XmlElement(IsNullable = true)] ref MailingListData List)
@@ -2723,7 +2723,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetUserFromList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetUserFromList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetUserFromList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("ListUser", IsNullable = true)]
@@ -2763,7 +2763,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AddUserToList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/AddUserToList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/AddUserToList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public int AddUserToList(Guid listId, [XmlElement(IsNullable = true)] MailingListUserData ListUser)
@@ -2802,7 +2802,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/UpdateUserInList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/UpdateUserInList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/UpdateUserInList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void UpdateUserInList(Guid listId, [XmlElement(IsNullable = true)] MailingListUserData ListUser)
@@ -2840,7 +2840,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RemoveUserFromList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/RemoveUserFromList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/RemoveUserFromList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public int RemoveUserFromList(Guid listId, string email)
@@ -2879,7 +2879,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteList(Guid listId)
@@ -2915,7 +2915,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SubtractLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SubtractLists", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SubtractLists", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public Guid SubtractLists(Guid outputListId, Guid inputListId)
@@ -2954,7 +2954,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AppendLists", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/AppendLists", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/AppendLists", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public Guid AppendLists(Guid outputListId, Guid inputListId)
@@ -2993,7 +2993,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AppendExpressionToList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/AppendExpressionToList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/AppendExpressionToList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public Guid AppendExpressionToList(Guid outputListId, int expressionId)
@@ -3032,7 +3032,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/InitImportMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/InitImportMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/InitImportMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public UploadHandshake InitImportMailingList(Guid listId, string filePath, long fileSize, DateTime fileLastWriteTime)
@@ -3075,7 +3075,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ImportMailingList", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/ImportMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/ImportMailingList", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void ImportMailingList(Guid operationId)
@@ -3111,7 +3111,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/AbortListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/AbortListOperation", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/AbortListOperation", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void AbortListOperation(Guid operationId)
@@ -3147,7 +3147,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetListOperation", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetListOperation", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public MailingListOperationData GetListOperation(Guid operationId)
@@ -3184,7 +3184,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetListOperationHistory", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetListOperationHistory", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetListOperationHistory", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public MailingListOperationData[] GetListOperationHistory(Guid listId)
@@ -3221,7 +3221,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMostRecentListOperation", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetMostRecentListOperation", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetMostRecentListOperation", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public MailingListOperationData GetMostRecentListOperation(Guid listId)
@@ -3258,7 +3258,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CreateListCopy", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/CreateListCopy", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/CreateListCopy", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("List", IsNullable = true)]
@@ -3298,7 +3298,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetAllowedProfileDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetAllowedProfileDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetAllowedProfileDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public string GetAllowedProfileDefinition()
@@ -3329,7 +3329,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/NewPromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/NewPromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/NewPromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("PromoCodeDefinition", IsNullable = true)]
@@ -3361,7 +3361,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/SavePromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/SavePromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/SavePromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void SavePromoCodeDefinition([XmlElement(IsNullable = true)] ref PromoCodeDefinitionData PromoCodeDefinition, bool forceOverwrite)
@@ -3400,7 +3400,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeletePromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeletePromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeletePromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeletePromoCodeDefinition(int promoCodeDefinitionId)
@@ -3436,7 +3436,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/DeleteBatch", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/DeleteBatch", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/DeleteBatch", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void DeleteBatch(Guid batchId)
@@ -3472,7 +3472,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GenerateRandomPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GenerateRandomPromoCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GenerateRandomPromoCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public Guid GenerateRandomPromoCodes(int promoCodeDefinitionId, string batchName, int numberOfCodes, RandomGenerationParameters generationParameters)
@@ -3515,7 +3515,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/LookupPromoCodeDefinitionByCode", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/LookupPromoCodeDefinitionByCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/LookupPromoCodeDefinitionByCode", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("PromoCodeDefinition", IsNullable = true)]
@@ -3553,7 +3553,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPromoCodeDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetPromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetPromoCodeDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		[return: XmlElement("PromoCodeDefinition", IsNullable = true)]
@@ -3591,7 +3591,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetBatchInfosForDefinition", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetBatchInfosForDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetBatchInfosForDefinition", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public BatchInfo[] GetBatchInfosForDefinition(int promoCodeDefinitionId, bool onlyCompletedBatches)
@@ -3630,7 +3630,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/InitImportPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/InitImportPromoCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/InitImportPromoCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public UploadHandshake InitImportPromoCodes(int promoCodeDefinitionId, string batchName, string filePath, long fileSize, DateTime fileLastWriteTime, int codeLength, string prefix, string suffix)
@@ -3681,7 +3681,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/ImportPromoCodes", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/ImportPromoCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/ImportPromoCodes", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void ImportPromoCodes(Guid importToken)
@@ -3717,7 +3717,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetPromoCodeGenerationStatus", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetPromoCodeGenerationStatus", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetPromoCodeGenerationStatus", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public PromoCodeOperationStatus GetPromoCodeGenerationStatus(int promoCodeDefinitionId)
@@ -3754,7 +3754,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/CancelPromoCodeGeneration", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/CancelPromoCodeGeneration", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/CancelPromoCodeGeneration", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public Guid CancelPromoCodeGeneration(int promoCodeDefinitionId)
@@ -3791,7 +3791,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/RevertPromoCodeRedemption", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/RevertPromoCodeRedemption", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/RevertPromoCodeRedemption", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public void RevertPromoCodeRedemption(string promoCode, Guid basketOrderGroupId)
@@ -3829,7 +3829,7 @@ namespace ExportImportPromotion.StoreMarketingWebService
 #if MS
 		[SoapDocumentMethod("http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService/GetMaximumPromoCodeBatchSize", RequestNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", ResponseNamespace = "http://schemas.microsoft.com/CommerceServer/2006/06/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #else
-		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/MarketingWebService/GetMaximumPromoCodeBatchSize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
+		[SoapDocumentMethod("http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService/GetMaximumPromoCodeBatchSize", RequestNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", ResponseNamespace = "http://schemas.commerceserver.net/2013/01/Marketing/MarketingWebService", Use = SoapBindingUse.Literal, ParameterStyle = SoapParameterStyle.Wrapped)]
 #endif
 
 		public int GetMaximumPromoCodeBatchSize()
