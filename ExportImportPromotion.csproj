@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B7B5A612-25B4-4F12-9F63-13EA39AD8A9B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>ExportImportPromotion</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExportImportPromotion.Properties\Settings.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AbortListOperationCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AccessCheckCancelCouponExportCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ActivateCampaignCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ActivateCampaignItemCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AddUserToListCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AddUserToListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AdvertisementData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AdvertisementType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AppendExpressionToListCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AppendExpressionToListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AppendListsCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\AppendListsCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\BatchInfo.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CampaignData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CampaignEventTypeData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CampaignItemData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CampaignItemType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CancelPromoCodeGenerationCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CancelPromoCodeGenerationCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ConditionBasis.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CopyCampaignItemCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CopyCampaignItemCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CopyExpressionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CopyExpressionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CreateListCopyCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CreateListCopyCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CustomerData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\CustomerType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteBatchCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteCampaignCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteCampaignEventTypeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteCampaignItemCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteCustomerCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteDisplaySizeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteDisplayTemplateCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteExpressionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteIndustryCodeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeleteListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeletePageGroupCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DeletePromoCodeDefinitionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DirectMailData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DirectMailRecurrence.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DirectMailRecurrenceType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DiscountConditionData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DiscountData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DiscountPrioritySet.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DiscountType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DisplayableCampaignItemData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DisplayPropertyData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DisplayPropertyType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DisplayPropertyValueData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DisplaySizeData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\DisplayTemplateData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExecuteSearchCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExecuteSearchCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExecuteSearchWithCountCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExecuteSearchWithCountCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExpressionCategorySet.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExpressionData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExpressionListData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExpressionRefData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ExpressionTargetData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GenerateCampaignItemPreviewCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GenerateCampaignItemPreviewCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GenerateRandomPromoCodesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GenerateRandomPromoCodesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllCampaignEventTypesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllCampaignEventTypesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllDisplaySizesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllDisplaySizesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllDisplayTemplatesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllDisplayTemplatesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllExpressionCategoriesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllExpressionCategoriesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllIndustryCodesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllIndustryCodesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllLanguagesInUseCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllLanguagesInUseCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllMailingListsCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllMailingListsCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllowedProfileDefinitionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllowedProfileDefinitionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllPageGroupsCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAllPageGroupsCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAuthorizedTasksCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetAuthorizedTasksCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetBatchInfosForDefinitionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetBatchInfosForDefinitionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCampaignCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCampaignCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCampaignEventTypeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCampaignEventTypeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCampaignItemCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCampaignItemCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCustomerCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetCustomerCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDefaultLanguageCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDefaultLanguageCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplaySizeByNameCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplaySizeByNameCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplaySizeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplaySizeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplayTemplateByNameCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplayTemplateByNameCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplayTemplateCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetDisplayTemplateCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetExpressionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetExpressionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetIndustryCodeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetIndustryCodeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetListOperationCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetListOperationCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetListOperationHistoryCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetListOperationHistoryCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetMailingListCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetMailingListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetMaximumPromoCodeBatchSizeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetMaximumPromoCodeBatchSizeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetMostRecentListOperationCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetMostRecentListOperationCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetPageGroupCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetPageGroupCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetProfileDefinitionsCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetProfileDefinitionsCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetPromoCodeDefinitionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetPromoCodeDefinitionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetPromoCodeGenerationStatusCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetPromoCodeGenerationStatusCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetSearchablePropertiesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetSearchablePropertiesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetServiceVersionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetServiceVersionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetSiteTermsCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetSiteTermsCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetUserFromListCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GetUserFromListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\GlobalExpressionData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ImportMailingListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ImportPromoCodesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\IndustryCodeData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\InitImportMailingListCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\InitImportMailingListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\InitImportPromoCodesCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\InitImportPromoCodesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\LanguageStringData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ListOperationStatusCode.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\ListOperationType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\LocalExpressionData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\LookupPromoCodeDefinitionByCodeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\LookupPromoCodeDefinitionByCodeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MailingListData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MailingListError.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MailingListErrorCode.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MailingListOperationData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MailingListStatusCode.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MailingListUserData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MarketingService.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MessageFormat.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MoveCampaignItemToCampaignCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\MoveCampaignToCustomerCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewCampaignCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewCampaignCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewCampaignItemCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewCampaignItemCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewCustomerCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewCustomerCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewExpressionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewExpressionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewPromoCodeDefinitionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\NewPromoCodeDefinitionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\OfferType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PageGroupData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PrioritizeDiscountCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PrioritizeOption.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PromoCodeDefinitionData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PromoCodeGenerationError.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PromoCodeGenerationErrorCode.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PromoCodeGenerationMethod.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PromoCodeOperationStatus.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PromoCodeOperationStatusCode.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\PromoCodeUsageOption.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RandomGenerationParameters.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RecurrenceDays.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RecurrenceMonths.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RecurrenceWeek.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RefreshCacheCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RemoveUserFromListCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RemoveUserFromListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RestoreCampaignCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RestoreCampaignItemCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RestoreCustomerCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\RevertPromoCodeRedemptionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCampaignCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCampaignCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCampaignEventTypeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCampaignEventTypeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCampaignItemCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCampaignItemCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCustomerCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveCustomerCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveDisplaySizeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveDisplaySizeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveDisplayTemplateCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveDisplayTemplateCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveExpressionCategoriesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveExpressionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveExpressionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveIndustryCodeCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveIndustryCodeCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveMailingListCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SaveMailingListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SavePageGroupCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SavePageGroupCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SavePromoCodeDefinitionCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SavePromoCodeDefinitionCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SearchOptions.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\StaticListData.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SubtractListsCompletedEventArgs.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\SubtractListsCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\TargetAction.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\TemplatePropertySource.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\TestDirectMailCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\UpdateDiscountPrioritiesCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\UpdateUserInListCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\UploadChunkCompletedEventHandler.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\UploadHandshake.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\UrlEncodingType.cs" />
+    <Compile Include="ExportImportPromotion.StoreMarketingWebService\WebServiceVersion.cs" />
+    <Compile Include="ExportImportPromotion\Program.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
