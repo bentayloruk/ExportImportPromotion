@@ -1,8 +1,13 @@
 ExportImportPromotion
 =====================
 
-Export and import promotions from Commerce Server 2007, 2009, 2009R2 and 10+.
+**Export and import promotions from Commerce Server 2007, 2009, 2009R2 and 10+.**
 
+This solution builds two command line executables, one for versions of Commerce Server shipped by Microsoft and the other for post Microsoft versions of Commerce Server.
+
+Usage:
+
+![Picture of ExportImportPromotion.exe usage text](usage.png)
 
 ## Important
 
