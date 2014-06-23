@@ -17,4 +17,4 @@ The repository code was decompiled from the original command line exe, because t
 
 ## License
 
-MIT.
+[MIT](LICENSE.TXT).
