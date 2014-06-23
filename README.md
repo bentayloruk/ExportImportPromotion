@@ -13,7 +13,7 @@ Usage:
 
 Thanks go to [Calvin Beloy](http://www.linkedin.com/in/ccbeloy) for writing ExportImportPromotion.
 
-The code in this repository was decompiled from original command line executable (using ILSpy).  This was done because the source was not available (let us know if you have it).  Modifications have been made in order to support the non-Microsoft versions of Commerce Server.  Calvin gave permission to [Ben Taylor](https://twitter.com/bentayloruk) to open source this decompilation and license it under MIT.
+The repository code was decompiled from the original command line exe, because the source was not available (let us know if you have it).  Modifications have been made in order to support the latest, non-Microsoft versions of Commerce Server.  Calvin gave permission to [Ben Taylor](https://twitter.com/bentayloruk) to open source this decompilation and license it under MIT.
 
 ## License
 
